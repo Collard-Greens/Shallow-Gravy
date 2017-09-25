@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  height: 120px;
+  background-color: #B2D6FF;
+  Font-size: 100px;
+  text-align:center;
+}
+
+.sidebar {
+  float: left;                
+  width: 200px;
+  height: 500px;
+  background-color: #F09A9D;
+  display: block;
+}
+
+.content {
+  float: left;                  
+  width: 700px;
+  height: 500px;
+  background-color: #F5CF8E;
+}
+
+.footer {
+  clear: both;            
+  height: 200px;
+  background-color: #D6E9FE;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  overflow: hidden;
+  background-color: #EAEDF0;
+}
+
+ul{
+	list-style-position: inside;
+}
