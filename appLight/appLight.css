@@ -6,20 +6,27 @@ div
 	box-sizing:border-box;
 	padding:10px;
 	border:1px solid black;
+	.ech 
+{
+	margin:5px auto;
+	width:50px;
+	text-align:center;
+	box-sizing:border-box;
+	padding:10px;
+	border:1px solid black;
+}
 }
 .on
 {
 	color:blue;
 	background-color:white;
 	text-align:right;
-	display:block;
 }	
 .off
 {
 	color:red;
 	background-color:black;
 	text-align:left;
-	display:block;
 }
 
 body
