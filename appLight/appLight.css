@@ -8,12 +8,16 @@ div
 }
 .on
 {
+	margin:30px auto;
+	width:30px;
 	color:blue;
 	background-color:white;
 	text-align:right;
 }
 .off
 {
+	margin:60px auto;
+	width:60px;
 	color:red;
 	background-color:black;
 	text-align:left;
