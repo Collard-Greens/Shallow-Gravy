@@ -4,6 +4,7 @@ div
 	width:500px;
 	text-align:center;
 	box-sizing:border-box;
+	padding:10px;
 	border:1px solid black;
 }
 .on
@@ -11,14 +12,14 @@ div
 	color:blue;
 	background-color:white;
 	text-align:right;
-	margin-right:20px auto;
+	margin-left:20px auto;
 }
 .off
 {
 	color:red;
 	background-color:black;
 	text-align:left;
-	margin-left:20px auto;
+	margin-right:20px auto;
 }
 
 body
