@@ -11,13 +11,13 @@ div
 {
 	color:blue;
 	background-color:white;
-	padding-left:15px;
+	text-align:right;
 }
 .off
 {
 	color:red;
 	background-color:black;
-	padding-right: 15px;
+	text-align:left;
 }
 
 body
