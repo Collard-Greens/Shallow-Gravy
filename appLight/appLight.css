@@ -12,14 +12,14 @@ div
 	color:blue;
 	background-color:white;
 	text-align:right;
-	margin-left:20px auto;
-}
+	display:block;
+}	
 .off
 {
 	color:red;
 	background-color:black;
 	text-align:left;
-	margin-right:20px auto;
+	display:block;
 }
 
 body
