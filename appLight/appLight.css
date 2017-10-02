@@ -8,19 +8,17 @@ div
 }
 .on
 {
-	margin:30px auto;
-	width:30px;
 	color:blue;
 	background-color:white;
 	text-align:right;
+	margin-right:20px auto;
 }
 .off
 {
-	margin:60px auto;
-	width:60px;
 	color:red;
 	background-color:black;
 	text-align:left;
+	margin-left:20px auto;
 }
 
 body
