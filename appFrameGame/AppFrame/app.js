@@ -18,21 +18,22 @@ function MyApp()
 		setStatus("ready");
 	};
 } // end MyApp
-var unknownNumber = Math.round((Math.random() * 99) + 1);
-var guesses = 0;
+function submitSecret(){
+	var unknown = parseInt(document.getElementById("unknown").value);
 
-function guessProcess() {
-    var guess = document.getElementById("guess").value;
+function () {
+    var guess = parseInt(document.getElementById("guess").value);
+	var unknown = parseInt(document.getElementById("unknown").value);
     guesses++;
     
-        if (guess == unknownNumber) {
+        if (guess == unknown) {
             alert("You found my secret sauce!");
         }
-        if (unknownNumber < guess) {
+        else if (unknown < guess) {
             alert("Less than my sauce");
         }
 
-        if (unknownNumber > guess) {
+        else if (unknown > guess) {
             alert("Greater than my sauce");
 		}
 }
