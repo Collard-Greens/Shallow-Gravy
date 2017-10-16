@@ -26,7 +26,7 @@ function submitSecret(){
 
 
 function submitGuess() {
-    var guess = parseInt(document.getElementById("guess").value);
+    var guess = parseInt(document.getElementById("guessNum").value);
 	var unknown = parseInt(document.getElementById("unknown").value);
 
 
