@@ -15,6 +15,7 @@ function MyApp()
 	this.start = function()
 	{
 		document.getElementById("gravy boat").addEventListener("click", submitSecret);
+		document.getElementById("submitGuess").addEventListener("click", submitGuess);
 		$("#app>header").append(version);
 		setStatus("ready");
 	};
@@ -22,6 +23,8 @@ function MyApp()
 function submitSecret(){
 	var unknown = parseInt(document.getElementById("unknown").value);
 }
+
+var count=0;
 
 function submitGuess() {
     var guess = parseInt(document.getElementById("guess").value);
