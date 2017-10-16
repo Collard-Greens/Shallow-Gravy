@@ -31,14 +31,14 @@ function submitGuess() {
 	var spookyNum = parseInt(document.getElementById("unknown").value);
 
 		count++;
-        if (guess == unknown) {
+        if (guess == spookyNum) {
             alert("You found my secret sauce!");
         }
-        else if (unknown < guess) {
+        else if (spookyNum < guess) {
             alert("Less than my sauce");
         }
 
-        else if (unknown > guess) {
+        else if (spookyNum > guess) {
             alert("Greater than my sauce");
 		}
 }
