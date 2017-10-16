@@ -34,11 +34,11 @@ function submitGuess() {
         if (guess == spookyNum) {
             alert("You found my secret sauce!");
         }
-        else if (spookyNum < guess) {
+        else if (spookyNum > guess) {
             alert("Less than my sauce");
         }
 
-        else if (spookyNum > guess) {
+        else if (spookyNum < guess) {
             alert("Greater than my sauce");
 		}
 }
