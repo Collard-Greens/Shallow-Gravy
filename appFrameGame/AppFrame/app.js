@@ -22,8 +22,8 @@ function MyApp()
 } // end MyApp
 function submitSecret(){
 	var unknown = parseInt(document.getElementById("unknown").value);
-	document.getElementById("unknown").app.color = "#ffffff";
-	document.getElementById("hidden").app.display = "none";
+	document.getElementById("unknown").style.color = "#ffffff";
+	document.getElementById("unknown").style.display = "none";
 }
 
 var count=0;
