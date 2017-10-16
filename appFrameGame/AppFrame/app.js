@@ -24,7 +24,7 @@ var guesses = 0;
 function guessProcess() {
     var guess = document.getElementById("guess").value;
     guesses++;
-    if (guesses <= 7) {
+    
         if (guess == unknownNumber) {
             alert("You found my secret sauce!");
         }
@@ -34,10 +34,7 @@ function guessProcess() {
 
         if (unknownNumber > guess) {
             alert("Greater than my sauce");
-        }
-    } else {
-        alert("Max guesses");
-    }
+		}
 }
 /* 	JQuery's shorthand for the document ready event handler
 		could be written: $(document).ready(handler);
