@@ -14,6 +14,7 @@ function MyApp()
 	// creating a public function
 	this.start = function()
 	{
+		document.getElementById("gravy boat").addEventListener("click", submitSecret);
 		$("#app>header").append(version);
 		setStatus("ready");
 	};
