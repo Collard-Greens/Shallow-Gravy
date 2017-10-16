@@ -24,12 +24,13 @@ function submitSecret(){
 	var unknown = parseInt(document.getElementById("unknown").value);
 }
 
+var count=0;
 
 function submitGuess() {
     var guess = parseInt(document.getElementById("guessNum").value);
-	var unknown = parseInt(document.getElementById("unknown").value);
+	var spookyNum = parseInt(document.getElementById("unknown").value);
 
-
+		count++;
         if (guess == unknown) {
             alert("You found my secret sauce!");
         }
