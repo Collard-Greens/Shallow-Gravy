@@ -23,7 +23,7 @@ function MyApp()
 function submitSecret(){
 	var unknown = parseInt(document.getElementById("unknown").value);
 	document.getElementById("unknown").style.color = "#ffffff";
-	document.getElementById("hideMe").style.display = "none";
+	document.getElementById("hidden").style.display = "none";
 }
 
 var count=0;
