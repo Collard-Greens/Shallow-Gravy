@@ -15,7 +15,7 @@ function MyApp()
 	this.start = function()
 	{
 		document.getElementById("gravy boat").addEventListener("click", submitSecret);
-		document.getElementById("submitGuess").addEventListener("click", submitGuess);
+		document.getElementById("mashedTater").addEventListener("click", submitGuess);
 		$("#app>header").append(version);
 		setStatus("ready");
 	};
