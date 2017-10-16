@@ -27,7 +27,8 @@ function () {
     var guess = parseInt(document.getElementById("guess").value);
 	var unknown = parseInt(document.getElementById("unknown").value);
     guesses++;
-    
+}
+
         if (guess == unknown) {
             alert("You found my secret sauce!");
         }
