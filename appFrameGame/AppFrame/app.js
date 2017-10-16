@@ -29,18 +29,23 @@ var count=0;
 function submitGuess() {
     var guess = parseInt(document.getElementById("guessNum").value);
 	var spookyNum = parseInt(document.getElementById("unknown").value);
-		
+	var tries;
+	
 		count++;
         if (guess == spookyNum) {
-            alert("You found my secret sauce! It took you "+ count + " stirs.");
+           tries = "You found my secret sauce! It took you "+ count + " stirs.";
         }
         else if (spookyNum > guess) {
-            alert("Stir that sauce slower");
+            tries = "Stir that sauce slower";
         }
 
         else if (spookyNum < guess) {
-            alert("Stir that sauce faster");
+            tries = "Stir that sauce faster";
 		}
+		else{
+			tries = "Enter a valid amount of stirs-per-minute.";
+		}
+			document.getElementById("demo").innerHTML = help;
 }
 /* 	JQuery's shorthand for the document ready event handler
 		could be written: $(document).ready(handler);
