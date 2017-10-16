@@ -47,7 +47,7 @@ function submitGuess() {
 		else{
 			tries = "Enter a valid amount of stirs-per-minute.";
 		}
-			document.getElementById("demo").innerHTML = help;
+			document.getElementById("demo").innerHTML = tries;
 }
 /* 	JQuery's shorthand for the document ready event handler
 		could be written: $(document).ready(handler);
