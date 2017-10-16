@@ -29,18 +29,19 @@ var count=0;
 function submitGuess() {
     var guess = parseInt(document.getElementById("guessNum").value);
 	var spookyNum = parseInt(document.getElementById("unknown").value);
-
+	var tries;
 		count++;
         if (guess == spookyNum) {
             alert("You found my secret sauce!");
         }
         else if (spookyNum > guess) {
-            alert("Less than my sauce");
+            alert("Stir that sauce slower");
         }
 
         else if (spookyNum < guess) {
-            alert("Greater than my sauce");
+            alert("Stir that sauce faster");
 		}
+		alert (document.getElementById("demo").innerHTML = tries);
 }
 /* 	JQuery's shorthand for the document ready event handler
 		could be written: $(document).ready(handler);
