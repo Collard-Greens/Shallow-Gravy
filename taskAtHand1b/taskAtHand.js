@@ -72,7 +72,7 @@ function TaskAtHandApp()
 	
 	function onChangeTaskName($input)
 	{
-	$input.hide();
+	$"input.hide"();
 	var $span = $input.siblings("span.task-name");
 	if ($input.val())
 	{
