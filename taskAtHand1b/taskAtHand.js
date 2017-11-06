@@ -23,7 +23,8 @@ function TaskAtHandApp()
 			}
 		})
 		.focus();
-		$("#app>header").append(version);
+		
+		$("#app header").append(version);
 		setStatus("ready");
 	};
 	function addTask()
@@ -49,11 +50,11 @@ function TaskAtHandApp()
 	});
 	
 	$("button.move-up", $task).click(function() {
-		$task.insertBefore();
+		$task.insertBefore($task.prev());
 	});
 	
 	$("button.move-down", $task).click(function() {
-		$task.insertAfter();
+		$task.insertAfter($task.next());
 	});
 	
 	$("span.task-name", $task).click(function(){
@@ -69,8 +70,9 @@ function TaskAtHandApp()
 	});
 	}
 	
-	function onChangeTaskName($input){
-	$("input.hide"());
+	function onChangeTaskName($input)
+	{
+	$"input.hide"();
 	var $span = $input.siblings("span.task-name");
 	if ($input.val())
 	{
