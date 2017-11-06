@@ -63,7 +63,7 @@ function TaskAtHandApp()
 	
 	$("input.task-name", $task).change(function() {
 		onChangeTaskName($(this));
-	});
+	})
 	
 	.blur(function() {
 		$(this).hide().siblings("span.task-name").show();
@@ -72,7 +72,7 @@ function TaskAtHandApp()
 	
 	function onChangeTaskName($input)
 	{
-	$"input.hide"();
+	$input.hide();
 	var $span = $input.siblings("span.task-name");
 	if ($input.val())
 	{
