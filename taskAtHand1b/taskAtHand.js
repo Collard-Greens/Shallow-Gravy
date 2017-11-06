@@ -48,11 +48,11 @@ function TaskAtHandApp()
 		$task.remove();
 	});
 	
-	$("button.", $task).click(function() {
+	$("button.move-up", $task).click(function() {
 		$task.insertBefore();
 	});
 	
-	$("button.delete", $task).click(function() {
+	$("button.move-down", $task).click(function() {
 		$task.insertAfter();
 	});
 	
