@@ -8,7 +8,7 @@ function AppStorage(appName)
 	this.setValue = function(key, val)
 	{
 		if (this.localStorageSupported)
-			localStorage.setItem(prefix + key, JSON.stringify(val));
+			localStorage.setItem(prefix + key, JOSN.stringify(val));
 		return this;
 	};
 	
