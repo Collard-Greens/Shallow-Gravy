@@ -1,17 +1,14 @@
 "use strict";
 
-// using a function contructor form to create an object
 function TaskAtHandApp()
 {
 	var version = "v1.3",
 		appStorage = new AppStorage("taskAtHand");
-	// creating a private function
 	function setStatus(message)
 	{
 		$("#app>footer").text(message);
 	}
 
-	// creating a public function
 	this.start = function()
 	{
 		$("#new-task-name").keypress(function(e)
@@ -41,6 +38,7 @@ function TaskAtHandApp()
 	
 	function addTaskElement(taskName)
 	{
+		
 	var $task = $("#task-template .task").clone();
 	$("span.task-name", $task).text(taskName);
 	
@@ -69,7 +67,20 @@ function TaskAtHandApp()
 	.blur(function() {
 		$(this).hide().siblings("span.task-name").show();
 	});
+	saveTaskList();
+	
+	$task.click(function() {onSelectTask($task); });
+	function onSelectTask($task)
+	{
+		if ($task)
+		{
+		
+		$task.siblings(".selected").removeClass("selected");
+		
+		$task.addClass("selected");
+		}
 	}
+}
 	
 	function removeTask($task)
 	{
