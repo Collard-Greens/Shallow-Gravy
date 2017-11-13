@@ -1,0 +1,21 @@
+#app>header
+{
+	font: 3em Georgia, Geneva, sans-serif;
+	text-align: right;
+}
+
+#app
+{
+    background-color: #ccccff;
+    background: -webkit-linear-gradient(top, #ccffcc, #121212);
+    background: -moz-linear-gradient(top, #ccffcc, #008000);
+    background: -ms-linear-gradient(top, #ccffcc, #8020ff);
+    background: linear-gradient(top, #ccffcc, #8004ff);
+}
+
+#app>header,
+
+#app>footer
+{
+    background-color:  #666666;
+}
