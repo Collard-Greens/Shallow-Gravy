@@ -11,6 +11,7 @@ function TaskAtHandApp()
 
 	this.start = function()
 	{
+		$("#theme").change(onChangeTheme);
 		$("#new-task-name").keypress(function(e)
 		{
 			if (e.which == 13) //Enter Key
@@ -136,6 +137,26 @@ function TaskAtHandApp()
 			{		
 				addTaskElement(tasks[i]);
 			}	
+		}
+	}
+	function onChangeTheme()
+	{
+		var theme = $("#theme>option").filter(":selected").val();
+		setTheme(theme);
+		appStorage.setValue("theme", theme);
+	}
+	function setTheme(theme)
+	{
+		$("#theme-style").attr("href", "themes/" + theme + ".css");
+	}
+	function loadTheme()
+	{
+		var theme = appStorage.getValue("theme");
+		if (theme)
+		{
+			setTheme(theme);
+			$("#theme>option[value=" + theme + "]")
+				.attr("selected","selected");
 		}
 	}
 	
