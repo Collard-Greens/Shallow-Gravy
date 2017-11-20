@@ -2,7 +2,7 @@
 
 function TaskAtHandApp()
 {
-	var version = "v3.2",
+	var version = "v1.3",
 		appStorage = new AppStorage("taskAtHand"),
 		taskList = new TaskList(),
 		timeoutId = 0;
