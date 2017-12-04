@@ -110,11 +110,11 @@ function TheApp()
 	
 	
 	$("#point1").on("click",function() {
-		alert("You got a point, probably. Write it down."); 
+		alert("You got a point, probably. Write it down I trust you."); 
 	});
 	
 	$("#point2").on("click",function() {
-		alert("You got a point, probably. Write it down."); 
+		alert("You got a point, probably. Write it down I trust you."); 
 	});
 }
 
