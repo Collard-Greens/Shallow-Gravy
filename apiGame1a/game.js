@@ -19,8 +19,6 @@ function TheApp()
 		
 	});
 	
-	$("#getAnswer").on("click",function(){
-	});
 }
 
 window.onload = function(){

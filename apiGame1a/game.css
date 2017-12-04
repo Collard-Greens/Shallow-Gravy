@@ -3,6 +3,11 @@ header {
 
 }
 
+body {
+	Margin: auto;
+	text-align: center;
+}
+
 footer {
 	font-size: 5em;
 	
