@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="guessGame.css"></link>
+<script type="text/javascript" src="guessGame.js">
+</script>
+
+<title>Guessing Game v2</title>
+</head>
+
+<body>
+	<p>
+	Enter a Secret Number: <input type="text" id="secretNum"></br>
+	<button onclick="submitSecret()">Submit your secret number</button>
+	</p>
+	
+	<p class=hidden id=hideMe>
+	Guess Number: <input type="text" id="guessNum"></br>
+	<button onclick="submitGuess()">Submit the guess</button></br>
+	</p>
+	
+	<p>
+	<span id="demo"> </span></br>
+	<button onclick="location.reload()">Do over</button>
+
+</body>
+
+</html>
